@@ -1,0 +1,308 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*pradžia*/
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.container {
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 0 10px;
+}
+.header {
+    background: url(./img/trip.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 800px;
+    text-align: center;
+}
+.header .container {
+    position: relative;
+    top: 280px;
+}
+.header h1 {
+    color: #fff;
+    line-height: 110px;
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+.header p {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-transform: uppercase; 
+}
+.btn {
+  color: #fff;
+  background: #0F2958;
+  padding: 10px 40px;
+  text-decoration: none; 
+  transition: background .5s; 
+}
+.nav { 
+  background-color: #0F2958;
+  height: 80px; 
+  width: 100%;
+}
+.nav ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto; 
+  padding: 0;
+text-decoration: none;
+}
+.nav a {
+    text-decoration: none;
+    color: #F8E5C5; 
+    padding: 30px 10px;
+}
+
+.nav ul li {  
+  color: #fff;
+  display: inline-block; 
+  height: 80px;
+  line-height: 80px; 
+  list-style: none;
+  padding: 0 10px;
+  transition: background .5s; 
+}
+.nav a:hover {
+     color: #2C1914;
+}
+
+.btn:hover, .nav ul li:hover {
+  background: #F8E5C5;
+  cursor: pointer; 
+  color: #2C1914;
+  transition: background .5s;   
+}
+
+.main .container {
+  margin: 100px auto;
+  height: auto;
+  text-align: justify;
+}
+.main h2, #contact .container h2 {
+    color: #2C1914;
+    line-height: 30px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.main p {
+  color: #000;
+  margin-bottom: 20px;
+  margin-top: 0;
+  line-height: 30px;
+  font-size: 16px;
+}
+#transport .container {
+    display: flex;  
+  position: relative;
+  height: auto;
+    margin-bottom: 100px;
+}
+.description {
+    display: inline-block;
+    width: 100px;
+    margin-top: 0px;
+}
+#transport .container .description {
+    display: inline-block;
+    width: 380px;
+    
+}
+#transport .container img {
+    display: inline-block;
+    width: 360px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px #2C1914;
+    transition: all 0.5s ease-in-out;
+}
+#transport .container img:hover {
+    transform: scale(1.1); 
+}
+#transport .container .btn {
+    display: inline-block;
+    margin: 20px;
+}
+#transport .container h2 {
+    color: #2C1914;
+     line-height: 30px;
+    letter-spacing: 6px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif; 
+    margin: 20px;
+}
+#transport .container p {
+    line-height: 30px;
+    font-size: 16px;
+    margin: 10px;
+    text-align: justify;
+}
+
+#contact {
+    height : 700px;
+ 	background-image: url(./img/winner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+ 	position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+ }
+#layer {
+    width: 100%;
+    height: 700px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: rgba(100,100,100, 0.7);
+	z-index: 1;
+}
+
+#contact .container{
+    position: relative;
+    height : 500px;
+    padding : 30px;
+    top: 100px;
+    margin : auto;
+    width : 100%;
+    color: #F8E5C5;
+    z-index: 2;
+ }
+#contact .container p {
+    line-height : 1.8em;
+    color:#F8E5C5;
+    font-size: 20px;
+    text-shadow: 2px 2px #2C1914;
+}
+#contact .container h2 {
+    color: #F8E5C5;
+    text-shadow: 2px 2px #2C1914;
+    line-height: 30px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+#back a:link, #back a:visited { 
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#back > a{
+    display: inline-block;
+    width: auto;   
+}
+
+footer {
+    background-color: #0F2958;
+    height: 250px;
+}
+footer .container {
+    padding: 25px 50px;
+    color: rgba(248,229,197, 0.5);
+    line-height: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+footer .copy {
+    margin:10px;
+    font-size: 14px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    text-align: right;
+}
+@media only screen and (max-width: 700px){
+    #transport .container{
+    flex-direction: column; 
+    align-items: center;
+    }  
+}
+   @media only screen and (max-width: 600px){
+       .nav {
+           height: auto;
+       }
+       .nav ul{
+           height: auto;
+           display: flex;
+           flex-direction: column;
+           text-align: center;
+       }
+       .nav ul li {
+           height: auto;
+           line-height: 50px;
+           box-shadow: 0px -1px 10px inset #F8E5C5;       
+       }       
+}
+
+    
+
+
+
+
+
+
